@@ -12,7 +12,7 @@ body {
   .header .steps {
     display: block;
     margin-left: -200px; }
-  .header .circle1 {
+  .header #crc1 {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -183,10 +183,3 @@ body {
       margin-left: 10px; }
     .main-2 .icon-1 p {
       margin-left: 10px; }
-
-.step2 {
-  display: none; }
-  .step2 .step2 .circle2 {
-    color: black;
-    background-color: #35b0f7;
-    border: none; }

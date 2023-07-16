@@ -17,7 +17,7 @@ body {
         margin-left: -200px;
     }
 
-    .circle1 {
+    #crc1 {
         height: 40px;
         width: 40px;
         border-radius: 50%;
@@ -266,15 +266,5 @@ body {
         p {
             margin-left: 10px;
         }
-    }
-}
-
-.step2 {
-    display: none;
-
-    .step2 .circle2 {
-        color: black;
-        background-color: rgb(53, 176, 247);
-        border: none;
     }
 }
