@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #d1eff8; }
+
+.header {
+  display: flex;
+  font-size: 10px; }
+  .header .steps {
+    display: block;
+    margin-left: -200px; }
+  .header .circle1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #35b0f7;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: black; }
+  .header .step1 {
+    display: flex;
+    margin-top: 40px;
+    margin-left: -50px; }
+    .header .step1 .title1 {
+      margin-left: 10px; }
+      .header .step1 .title1 h4 {
+        color: rgba(232, 243, 243, 0.575); }
+      .header .step1 .title1 h2 {
+        color: white; }
+  .header .circle2 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: #fff; }
+  .header .step2 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: -50px; }
+    .header .step2 .title2 {
+      margin-left: 10px; }
+    .header .step2 h4 {
+      color: rgba(232, 243, 243, 0.575); }
+    .header .step2 h2 {
+      color: white; }
+  .header .circle3 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: #fff; }
+  .header .step3 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: -50px; }
+    .header .step3 .title3 {
+      margin-left: 10px; }
+    .header .step3 h4 {
+      color: rgba(232, 243, 243, 0.575); }
+    .header .step3 h2 {
+      color: white; }
+  .header .circle4 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: #fff; }
+  .header .step4 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: -50px; }
+    .header .step4 .title4 {
+      margin-left: 10px; }
+    .header .step4 h4 {
+      color: rgba(232, 243, 243, 0.575); }
+    .header .step4 h2 {
+      color: white; }
+
+.container {
+  display: flex;
+  background-color: #fff;
+  margin-top: 80px;
+  min-width: 800px;
+  margin-left: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-right: 250px; }
+
+.main-1 {
+  display: block; }
+  .main-1 .headerCon {
+    margin-left: 220px;
+    margin-top: 50px; }
+  .main-1 .nameLabel {
+    margin-left: 220px;
+    margin-top: 30px; }
+    .main-1 .nameLabel label {
+      display: block;
+      color: #01015c; }
+    .main-1 .nameLabel input {
+      width: 400px;
+      height: 40px;
+      margin-top: 10px;
+      text-indent: 15px;
+      border: 1px solid black;
+      border-radius: 5px; }
+  .main-1 .emailLabel {
+    margin-left: 220px;
+    margin-top: 30px; }
+    .main-1 .emailLabel label {
+      display: block;
+      color: #01015c; }
+    .main-1 .emailLabel input {
+      width: 400px;
+      height: 40px;
+      margin-top: 10px;
+      text-indent: 15px;
+      border-radius: 5px; }
+  .main-1 .numberLabel {
+    margin-left: 220px;
+    margin-top: 30px; }
+    .main-1 .numberLabel label {
+      display: block;
+      color: #01015c; }
+    .main-1 .numberLabel input {
+      width: 400px;
+      height: 40px;
+      margin-top: 10px;
+      text-indent: 15px;
+      border-radius: 5px; }
+  .main-1 button {
+    float: right;
+    margin-top: 75px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #01015c;
+    color: white;
+    cursor: pointer; }
+
+.main-2 {
+  display: none; }
+  .main-2 .header-2 {
+    margin-left: 180px;
+    margin-top: 50px; }
+  .main-2 p {
+    margin-top: 10px; }
+  .main-2 .icon-1 {
+    margin-left: 180px;
+    margin-top: 30px;
+    width: 140px;
+    height: 160px;
+    border: 1px solid plum;
+    border-radius: 5px; }
+    .main-2 .icon-1 img {
+      margin-left: 10px;
+      margin-top: 20px; }
+    .main-2 .icon-1 h3 {
+      margin-top: 30px;
+      margin-left: 10px; }
+    .main-2 .icon-1 p {
+      margin-left: 10px; }
+
+.step2 {
+  display: none; }
+  .step2 .step2 .circle2 {
+    color: black;
+    background-color: #35b0f7;
+    border: none; }

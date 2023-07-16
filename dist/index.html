@@ -4,13 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal info</title>
+    <title>Multi-step Form</title>
     <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <img src="/assets/images/bg-sidebar-desktop.svg" alt="">
+            <div class="steps">
+                <div class="step1">
+                    <div class="circle1">1</div>
+                    <div class="title1">
+                        <h4>STEP 1</h4>
+                        <h2>YOUR INFO</h2>
+                    </div>
+                </div>
+                <div class="step2">
+                    <div class="circle2">2</div>
+                    <div class="title2">
+                        <h4>STEP 2</h4>
+                        <h2>SELECT PLAN</h2>
+                    </div>
+                </div>
+                <div class="step3">
+                    <div class="circle3">3</div>
+                    <div class="title3">
+                        <h4>STEP 3</h4>
+                        <h2>ADD-ONS</h2>
+                    </div>
+                </div>
+                <div class="step4">
+                    <div class="circle4">4</div>
+                    <div class="title4">
+                        <h4>STEP 4</h4>
+                        <h2>SUMMARY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="main-1">
+            <div class="headerCon">
+                <h1>Personal info</h1>
+                <p>Please provide your name, email address, and phone number.</p>
+            </div>
+            <div class="nameLabel">
+                <label>Name</label>
+                <input type="text" class="name" placeholder="e.g.Stephen King" required>
+            </div>
+            <div class="emailLabel">
+                <label>Email Address</label>
+                <input type="email" class="email" placeholder="e.g.stephenking@lorem.com" required>
+            </div>
+            <div class="numberLabel">
+                <label>Phone Number</label>
+                <input type="text" class="number" placeholder="e.g.+1 234 567 890" required>
+            </div>
+            <button class="next-btn">Next Step</button>
+        </div>
+        <!-- STEP 1 -->
 
 
+        <!-- STEP 2 -->
+        <div class="main-2">
+            <div class="header-2">
+                <h1>Select your plan</h1>
+                <p>You have the option of monthly or yearly billing.</p>
+            </div>
+
+            <div class="icons">
+                <div class="icon-1">
+                    <img src="/assets/images/icon-arcade.svg" alt="">
+                    <h3>Arcade</h3>
+                    <p>$9/mo</p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
 
     <script src="app.js"></script>
 </body>
