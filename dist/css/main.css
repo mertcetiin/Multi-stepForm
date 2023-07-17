@@ -168,21 +168,108 @@ body {
     margin-top: 50px; }
   .main-2 p {
     margin-top: 10px; }
-  .main-2 .icon-1 {
-    margin-left: 180px;
-    margin-top: 30px;
-    width: 140px;
-    height: 160px;
-    border: 1px solid plum;
-    border-radius: 5px; }
-    .main-2 .icon-1 img {
-      margin-left: 10px;
-      margin-top: 20px; }
-    .main-2 .icon-1 h3 {
+  .main-2 .icons {
+    display: flex; }
+    .main-2 .icons .btn-icon1 {
+      margin-left: 180px;
       margin-top: 30px;
-      margin-left: 10px; }
-    .main-2 .icon-1 p {
-      margin-left: 10px; }
+      width: 140px;
+      height: 160px;
+      border: 1px solid plum;
+      border-radius: 5px;
+      cursor: pointer;
+      background: none; }
+      .main-2 .icons .btn-icon1 img {
+        margin-left: -60px; }
+      .main-2 .icons .btn-icon1 h3 {
+        margin-top: 30px;
+        margin-left: -50px; }
+      .main-2 .icons .btn-icon1 p {
+        margin-left: -60px;
+        color: #9b9898; }
+      .main-2 .icons .btn-icon1:hover {
+        background-color: #e9f7fc;
+        border: 2px solid plum; }
+    .main-2 .icons .btn-icon2 {
+      margin-left: 20px;
+      margin-top: 30px;
+      width: 140px;
+      height: 160px;
+      border: 1px solid plum;
+      border-radius: 5px;
+      cursor: pointer;
+      background: none; }
+      .main-2 .icons .btn-icon2 img {
+        margin-left: -60px; }
+      .main-2 .icons .btn-icon2 h3 {
+        margin-top: 30px;
+        margin-left: -30px; }
+      .main-2 .icons .btn-icon2 p {
+        margin-left: -60px;
+        color: #9b9898; }
+      .main-2 .icons .btn-icon2:hover {
+        background-color: #e9f7fc;
+        border: 2px solid plum; }
+    .main-2 .icons .btn-icon3 {
+      margin-left: 20px;
+      margin-top: 30px;
+      width: 140px;
+      height: 160px;
+      border: 1px solid plum;
+      border-radius: 5px;
+      cursor: pointer;
+      background: none; }
+      .main-2 .icons .btn-icon3 img {
+        margin-left: -60px; }
+      .main-2 .icons .btn-icon3 h3 {
+        margin-top: 30px;
+        margin-left: -80px; }
+      .main-2 .icons .btn-icon3 p {
+        margin-left: -60px;
+        color: #9b9898; }
+      .main-2 .icons .btn-icon3:hover {
+        background-color: #e9f7fc;
+        border: 2px solid plum; }
+  .main-2 .modebtn {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 180px;
+    background-color: #dceef3;
+    height: 50px;
+    border-radius: 5px;
+    padding-bottom: 5px; }
+    .main-2 .modebtn .planSelect {
+      margin-top: 10px;
+      width: 45px;
+      height: 22px;
+      margin-left: 30px;
+      margin-right: 80px;
+      border-radius: 20px;
+      border: none;
+      position: relative;
+      background-color: #01015c; }
+    .main-2 .modebtn .planCircle {
+      width: 15px;
+      height: 15px;
+      border-radius: 60%;
+      border: none;
+      margin-left: -18px;
+      position: absolute;
+      transition: left 0.3s ease-in-out;
+      margin-top: 3px;
+      background: #fff;
+      cursor: pointer; }
+      .main-2 .modebtn .planCircle.moved {
+        left: 43px; }
+    .main-2 .modebtn .monthly {
+      margin-left: -10px;
+      color: #04046d; }
+    .main-2 .modebtn .yearly {
+      margin-left: -50px;
+      color: rgba(78, 83, 83, 0.575); }
 
 .circle1.active {
   color: #fff;
@@ -203,3 +290,9 @@ body {
   background-color: #35b0f7;
   color: black;
   border: none; }
+
+.yearly.active-yearly {
+  color: #04046d; }
+
+.monthly.active-monthly {
+  color: red; }

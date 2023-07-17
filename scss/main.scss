@@ -245,26 +245,150 @@ body {
         margin-top: 10px;
     }
 
-    .icon-1 {
-        margin-left: 180px;
-        margin-top: 30px;
-        width: 140px;
-        height: 160px;
-        border: 1px solid plum;
-        border-radius: 5px;
+    .icons {
+        display: flex;
 
-        img {
-            margin-left: 10px;
-            margin-top: 20px;
-        }
-
-        h3 {
+        .btn-icon1 {
+            margin-left: 180px;
             margin-top: 30px;
-            margin-left: 10px;
+            width: 140px;
+            height: 160px;
+            border: 1px solid plum;
+            border-radius: 5px;
+            cursor: pointer;
+            background: none;
+
+            img {
+                margin-left: -60px;
+            }
+
+            h3 {
+                margin-top: 30px;
+                margin-left: -50px;
+            }
+
+            p {
+                margin-left: -60px;
+                color: rgb(155, 152, 152);
+            }
+
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 2px solid plum;
+            }
         }
 
-        p {
-            margin-left: 10px;
+        .btn-icon2 {
+            margin-left: 20px;
+            margin-top: 30px;
+            width: 140px;
+            height: 160px;
+            border: 1px solid plum;
+            border-radius: 5px;
+            cursor: pointer;
+            background: none;
+
+            img {
+                margin-left: -60px;
+            }
+
+            h3 {
+                margin-top: 30px;
+                margin-left: -30px;
+            }
+
+            p {
+                margin-left: -60px;
+                color: rgb(155, 152, 152);
+            }
+
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 2px solid plum;
+            }
+        }
+
+        .btn-icon3 {
+            margin-left: 20px;
+            margin-top: 30px;
+            width: 140px;
+            height: 160px;
+            border: 1px solid plum;
+            border-radius: 5px;
+            cursor: pointer;
+            background: none;
+
+            img {
+                margin-left: -60px;
+            }
+
+            h3 {
+                margin-top: 30px;
+                margin-left: -80px;
+            }
+
+            p {
+                margin-left: -60px;
+                color: rgb(155, 152, 152);
+            }
+
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 2px solid plum;
+            }
+        }
+    }
+
+    .modebtn {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 180px;
+        background-color: rgb(220, 238, 243);
+        height: 50px;
+        border-radius: 5px;
+        padding-bottom: 5px;
+
+
+        .planSelect {
+            margin-top: 10px;
+            width: 45px;
+            height: 22px;
+            margin-left: 30px;
+            margin-right: 80px;
+            border-radius: 20px;
+            border: none;
+            position: relative;
+            background-color: rgb(1, 1, 92);
+        }
+
+        .planCircle {
+            width: 15px;
+            height: 15px;
+            border-radius: 60%;
+            border: none;
+            margin-left: -18px;
+            position: absolute;
+            transition: left 0.3s ease-in-out;
+            margin-top: 3px;
+            background: #fff;
+            cursor: pointer;
+
+            &.moved {
+                left: 43px;
+            }
+        }
+
+        .monthly {
+            margin-left: -10px;
+            color: rgb(4, 4, 109);
+        }
+
+        .yearly {
+            margin-left: -50px;
+            color: rgba(78, 83, 83, 0.575);
         }
     }
 }
@@ -291,4 +415,13 @@ body {
     background-color: rgb(53, 176, 247);
     color: black;
     border: none;
+}
+
+.yearly.active-yearly {
+    color: rgb(4, 4, 109);
+}
+
+.monthly.active-monthly {
+    color: red;
+    // color: rgba(78, 83, 83, 0.575);
 }
