@@ -9,6 +9,7 @@ const step2DOM = document.querySelector('.step2')
 nextbtnDOM.addEventListener('click', () => {
     main2DOM.style.display = 'block'
     main1DOM.remove();
-    circle1DOM.classList.remove('circle1');
-    // circle1DOM.classList.add('circle1')
-})
+
+    circle1DOM.classList.add('active');
+    circle2DOM.classList.add('active');
+});

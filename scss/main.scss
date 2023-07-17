@@ -17,7 +17,7 @@ body {
         margin-left: -200px;
     }
 
-    #crc1 {
+    .circle1 {
         height: 40px;
         width: 40px;
         border-radius: 50%;
@@ -267,4 +267,28 @@ body {
             margin-left: 10px;
         }
     }
+}
+
+.circle1.active {
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+}
+
+.circle2.active {
+    background-color: rgb(53, 176, 247);
+    color: black;
+    border: none;
+}
+
+.circle3.active {
+    background-color: rgb(53, 176, 247);
+    color: black;
+    border: none;
+}
+
+.circle4.active {
+    background-color: rgb(53, 176, 247);
+    color: black;
+    border: none;
 }

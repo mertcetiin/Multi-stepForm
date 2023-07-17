@@ -12,7 +12,7 @@ body {
   .header .steps {
     display: block;
     margin-left: -200px; }
-  .header #crc1 {
+  .header .circle1 {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -183,3 +183,23 @@ body {
       margin-left: 10px; }
     .main-2 .icon-1 p {
       margin-left: 10px; }
+
+.circle1.active {
+  color: #fff;
+  border: 1px solid #fff;
+  background: none; }
+
+.circle2.active {
+  background-color: #35b0f7;
+  color: black;
+  border: none; }
+
+.circle3.active {
+  background-color: #35b0f7;
+  color: black;
+  border: none; }
+
+.circle4.active {
+  background-color: #35b0f7;
+  color: black;
+  border: none; }
