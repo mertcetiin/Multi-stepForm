@@ -391,6 +391,36 @@ body {
             color: rgba(78, 83, 83, 0.575);
         }
     }
+
+    .step2-buttons {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        .go-back1 {
+            width: 100px;
+            height: 30px;
+            margin-top: 130px;
+            margin-left: 180px;
+            background: none;
+            border: none;
+            color: rgb(1, 1, 92);
+            cursor: pointer;
+        }
+
+        .next-btn1 {
+            margin-top: 130px;
+            margin-left: 280px;
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(1, 1, 92);
+            color: white;
+            cursor: pointer;
+
+        }
+    }
 }
 
 .circle1.active {
