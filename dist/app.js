@@ -20,12 +20,13 @@ const monthlyDOM = document.querySelector('.monthly');
 const yearlyDOM = document.querySelector('.yearly');
 
 planCircleDOM.addEventListener('click', () => {
-    planCircleDOM.classList.toggle('moved');
+     planCircleDOM.classList.toggle('moved');
 
-    monthlyDOM.classList.toggle('active-monthly');
-    yearlyDOM.classList.remove('active-yearly');
+     monthlyDOM.classList.toggle('active-monthly');
+    // monthlyDOM.classList.remove()
+    // yearlyDOM.classList.toggle('active-yearly');
 });
-
+ 
 
 const goback1DOM = document.querySelector('.go-back1');
 

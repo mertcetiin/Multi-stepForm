@@ -1,3 +1,7 @@
+$tablet-width: 1200px;
+$mobile-width: 400px;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +15,12 @@ body {
 .header {
     display: flex;
     font-size: 10px;
+
+    // @media (min-width: 400px) {
+    //     img {
+    //         float: right;
+    //     }
+    // }
 
     .steps {
         display: block;
@@ -34,6 +44,7 @@ body {
         display: flex;
         margin-top: 40px;
         margin-left: -50px;
+        font-family: system-ui;
 
         .title1 {
             margin-left: 10px;
@@ -44,6 +55,7 @@ body {
 
             h2 {
                 color: white;
+                font-size: 13px;
             }
         }
     }
@@ -66,6 +78,7 @@ body {
         display: flex;
         margin-top: 30px;
         margin-left: -50px;
+        font-family: system-ui;
 
         .title2 {
             margin-left: 10px;
@@ -77,6 +90,7 @@ body {
 
         h2 {
             color: white;
+            font-size: 13px;
         }
     }
 
@@ -97,6 +111,7 @@ body {
         display: flex;
         margin-top: 30px;
         margin-left: -50px;
+        font-family: system-ui;
 
         .title3 {
             margin-left: 10px;
@@ -108,6 +123,7 @@ body {
 
         h2 {
             color: white;
+            font-size: 13px;
         }
     }
 
@@ -128,6 +144,7 @@ body {
         display: flex;
         margin-top: 30px;
         margin-left: -50px;
+        font-family: system-ui;
 
         .title4 {
             margin-left: 10px;
@@ -139,20 +156,39 @@ body {
 
         h2 {
             color: white;
+            font-size: 13px;
         }
     }
 
 }
 
 .container {
+    max-width: 1000px;
     display: flex;
     background-color: #fff;
-    margin-top: 80px;
+    margin-top: 180px;
     min-width: 800px;
-    margin-left: 250px;
+    margin-left: 450px;
     padding: 15px;
     border-radius: 10px;
     margin-right: 250px;
+    box-shadow: 1px 1.5px 1px 1px rgba(122, 120, 120, 0.267);
+
+    @media(max-width: $tablet-width) {
+        margin: 150px 20px;
+
+    }
+
+    @media (max-width: 800px) {
+        margin: 13120px 0px;
+    }
+
+    @media (max-width: $mobile-width) {
+        img {
+            height: 50px;
+            width: 250px;
+        }
+    }
 }
 
 .main-1 {
@@ -161,6 +197,17 @@ body {
     .headerCon {
         margin-left: 220px;
         margin-top: 50px;
+
+        h1 {
+            font-family: system-ui;
+            font-size: 30px;
+            color: rgba(1, 1, 88, 0.658);
+        }
+
+        p {
+            color: rgba(101, 105, 105, 0.842);
+            font-family: system-ui;
+        }
     }
 
     .nameLabel {
@@ -170,6 +217,7 @@ body {
         label {
             display: block;
             color: rgb(1, 1, 92);
+            font-family: system-ui;
         }
 
         input {
@@ -177,8 +225,12 @@ body {
             height: 40px;
             margin-top: 10px;
             text-indent: 15px;
-            border: 1px solid black;
+            border: 1px solid rgba(122, 120, 120, 0.267);
             border-radius: 5px;
+            outline: none;
+            color: rgba(2, 2, 90, 0.993);
+            font-family: system-ui;
+            font-size: 15px;
         }
     }
 
@@ -189,6 +241,7 @@ body {
         label {
             display: block;
             color: rgb(1, 1, 92);
+            font-family: system-ui;
         }
 
         input {
@@ -197,6 +250,11 @@ body {
             margin-top: 10px;
             text-indent: 15px;
             border-radius: 5px;
+            border: 1px solid rgba(122, 120, 120, 0.267);
+            outline: none;
+            color: rgba(2, 2, 90, 0.993);
+            font-family: system-ui;
+            font-size: 15px;
         }
     }
 
@@ -207,6 +265,7 @@ body {
         label {
             display: block;
             color: rgb(1, 1, 92);
+            font-family: system-ui;
         }
 
         input {
@@ -215,19 +274,26 @@ body {
             margin-top: 10px;
             text-indent: 15px;
             border-radius: 5px;
+            border: 1px solid rgba(122, 120, 120, 0.267);
+            outline: none;
+            color: rgba(2, 2, 90, 0.993);
+            font-family: system-ui;
+            font-size: 15px;
         }
     }
 
     button {
-        float: right;
+        margin-left: 500px;
         margin-top: 75px;
-        width: 100px;
-        height: 30px;
+        width: 120px;
+        height: 40px;
         border-radius: 5px;
         border: none;
         background-color: rgb(1, 1, 92);
         color: white;
         cursor: pointer;
+        font-family: system-ui;
+        font-size: 15px;
     }
 
 
@@ -241,45 +307,23 @@ body {
         margin-top: 50px;
     }
 
+    h1 {
+        font-family: system-ui;
+        font-size: 30px;
+        color: rgba(1, 1, 88, 0.658);
+    }
+
     p {
         margin-top: 10px;
+        color: rgba(101, 105, 105, 0.842);
+        font-family: system-ui;
     }
 
     .icons {
         display: flex;
 
         .btn-icon1 {
-            margin-left: 180px;
-            margin-top: 30px;
-            width: 140px;
-            height: 160px;
-            border: 1px solid plum;
-            border-radius: 5px;
-            cursor: pointer;
-            background: none;
-
-            img {
-                margin-left: -60px;
-            }
-
-            h3 {
-                margin-top: 30px;
-                margin-left: -50px;
-            }
-
-            p {
-                margin-left: -60px;
-                color: rgb(155, 152, 152);
-            }
-
-            &:hover {
-                background-color: rgb(233, 247, 252);
-                border: 2px solid plum;
-            }
-        }
-
-        .btn-icon2 {
-            margin-left: 20px;
+            margin-left: 185px;
             margin-top: 30px;
             width: 140px;
             height: 160px;
@@ -295,11 +339,16 @@ body {
             h3 {
                 margin-top: 30px;
                 margin-left: -30px;
+                font-family: system-ui;
+                font-size: 20px;
+                color: rgba(1, 1, 88, 0.658);
             }
 
             p {
-                margin-left: -60px;
+                margin-left: -50px;
                 color: rgb(155, 152, 152);
+                font-family: system-ui;
+                font-size: 15px;
             }
 
             &:hover {
@@ -308,8 +357,8 @@ body {
             }
         }
 
-        .btn-icon3 {
-            margin-left: 20px;
+        .btn-icon2 {
+            margin-left: 48px;
             margin-top: 30px;
             width: 140px;
             height: 160px;
@@ -324,12 +373,52 @@ body {
 
             h3 {
                 margin-top: 30px;
-                margin-left: -80px;
+                margin-left: -10px;
+                font-family: system-ui;
+                font-size: 20px;
+                color: rgba(1, 1, 88, 0.658);
             }
 
             p {
-                margin-left: -60px;
+                margin-left: -50px;
                 color: rgb(155, 152, 152);
+                font-family: system-ui;
+                font-size: 15px;
+            }
+
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 2px solid plum;
+            }
+        }
+
+        .btn-icon3 {
+            margin-left: 48px;
+            margin-top: 30px;
+            width: 140px;
+            height: 160px;
+            border: 1px solid plum;
+            border-radius: 5px;
+            cursor: pointer;
+            background: none;
+
+            img {
+                margin-left: -60px;
+            }
+
+            h3 {
+                margin-top: 30px;
+                margin-left: -70px;
+                font-family: system-ui;
+                font-size: 20px;
+                color: rgba(1, 1, 88, 0.658);
+            }
+
+            p {
+                margin-left: -50px;
+                color: rgb(155, 152, 152);
+                font-family: system-ui;
+                font-size: 15px;
             }
 
             &:hover {
@@ -384,11 +473,13 @@ body {
         .monthly {
             margin-left: -10px;
             color: rgb(4, 4, 109);
+            font-family: system-ui;
         }
 
         .yearly {
             margin-left: -50px;
             color: rgba(78, 83, 83, 0.575);
+            font-family: system-ui;
         }
     }
 
@@ -398,27 +489,30 @@ body {
         justify-content: center;
 
         .go-back1 {
-            width: 100px;
-            height: 30px;
-            margin-top: 130px;
+            width: 120px;
+            height: 40px;
+            margin-top: 110px;
             margin-left: 180px;
             background: none;
             border: none;
             color: rgb(1, 1, 92);
             cursor: pointer;
+            font-family: system-ui;
+            font-size: 15px;
         }
 
         .next-btn1 {
-            margin-top: 130px;
+            margin-top: 110px;
             margin-left: 280px;
-            width: 100px;
-            height: 30px;
+            width: 120px;
+            height: 40px;
             border-radius: 5px;
             border: none;
             background-color: rgb(1, 1, 92);
             color: white;
             cursor: pointer;
-
+            font-family: system-ui;
+            font-size: 15px;
         }
     }
 }
@@ -447,11 +541,12 @@ body {
     border: none;
 }
 
-.yearly.active-yearly {
-    color: rgb(4, 4, 109);
-}
 
 .monthly.active-monthly {
     color: red;
     // color: rgba(78, 83, 83, 0.575);
+}
+
+.yearly.active-yearly {
+    color: rgb(4, 4, 109);
 }
