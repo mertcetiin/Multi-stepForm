@@ -1,3 +1,6 @@
+.mobile-img {
+  display: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -122,11 +125,31 @@ body {
       margin: 150px 20px; } }
   @media (max-width: 800px) {
     .container {
-      margin: 13120px 0px; } }
+      margin: 120px 0px; } }
   @media (max-width: 400px) {
-    .container img {
-      height: 50px;
-      width: 250px; } }
+    .container .desktop-img {
+      display: none;
+      z-index: 3; }
+    .container .mobile-img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50vh;
+      z-index: 1; }
+    .container .steps {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; }
+      .container .steps h4 {
+        display: none; }
+      .container .steps h2 {
+        display: none; }
+    .container .main-1 .headerCon {
+      margin-left: 30px; } }
 
 .main-1 {
   display: block; }
@@ -222,11 +245,18 @@ body {
     font-family: system-ui; }
   .main-2 .icons {
     display: flex; }
+    .main-2 .icons .yearly-free {
+      position: absolute;
+      display: none;
+      margin-top: 5px;
+      margin-left: 20px;
+      font-family: system-ui;
+      color: rgba(1, 1, 88, 0.658); }
     .main-2 .icons .btn-icon1 {
       margin-left: 185px;
       margin-top: 30px;
       width: 140px;
-      height: 160px;
+      height: 180px;
       border: 1px solid plum;
       border-radius: 5px;
       cursor: pointer;
@@ -251,7 +281,7 @@ body {
       margin-left: 48px;
       margin-top: 30px;
       width: 140px;
-      height: 160px;
+      height: 180px;
       border: 1px solid plum;
       border-radius: 5px;
       cursor: pointer;
@@ -276,7 +306,7 @@ body {
       margin-left: 48px;
       margin-top: 30px;
       width: 140px;
-      height: 160px;
+      height: 180px;
       border: 1px solid plum;
       border-radius: 5px;
       cursor: pointer;
@@ -350,7 +380,7 @@ body {
       margin-left: 180px;
       background: none;
       border: none;
-      color: #01015c;
+      color: #6c6d6d;
       cursor: pointer;
       font-family: system-ui;
       font-size: 15px; }
@@ -387,8 +417,8 @@ body {
   color: black;
   border: none; }
 
-.monthly.active-monthly {
-  color: red; }
+.modebtn .monthly.active-monthly {
+  color: rgba(78, 83, 83, 0.575); }
 
-.yearly.active-yearly {
+.modebtn .yearly.active-yearly {
   color: #04046d; }

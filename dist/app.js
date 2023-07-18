@@ -13,20 +13,52 @@ nextbtnDOM.addEventListener('click', () => {
 });
 
 
+const iconsBtnDOM = document.querySelector('.icons');
+const btnicon1DOM = document.querySelector('.btn-icon1');
+const btnicon2DOM = document.querySelector('.btn-icon2');
+const btnicon3DOM = document.querySelector('.btn-icon3');
+
+iconsBtnDOM.addEventListener('click',(e)=>{
+const clickedButton = e.target.closest('button')
+
+      btnicon1DOM.style.backgroundColor = ''
+      btnicon2DOM.style.backgroundColor = ''
+      btnicon3DOM.style.backgroundColor = ''; 
+
+      if(clickedButton === btnicon1DOM){
+        btnicon1DOM.style.backgroundColor = 'rgba(233, 247, 252)';
+      } else if(clickedButton === btnicon2DOM){
+        btnicon2DOM.style.backgroundColor = 'rgba(233, 247, 252)';
+      }else if(clickedButton ===btnicon3DOM){
+        btnicon3DOM.style.backgroundColor = 'rgba(233, 247, 252)';
+      }
+});
+
 
 const planSelectDOM = document.querySelector('.planSelect');
 const planCircleDOM = document.querySelector('.planCircle');
 const monthlyDOM = document.querySelector('.monthly');
 const yearlyDOM = document.querySelector('.yearly');
+const yearlyfreeDOM = document.querySelectorAll('.yearly-free');
+let yearlyFreeVisible = false;
 
 planCircleDOM.addEventListener('click', () => {
-     planCircleDOM.classList.toggle('moved');
+    planCircleDOM.classList.toggle('moved');
+    monthlyDOM.classList.toggle('active-monthly');
+    yearlyDOM.classList.toggle('active-yearly');
 
-     monthlyDOM.classList.toggle('active-monthly');
-    // monthlyDOM.classList.remove()
-    // yearlyDOM.classList.toggle('active-yearly');
+    if (yearlyFreeVisible) {
+        yearlyfreeDOM.forEach(element => {
+            element.style.display = 'none';
+        });
+        yearlyFreeVisible = false;
+    } else {
+        yearlyfreeDOM.forEach(element => {
+            element.style.display = 'block';
+        });
+        yearlyFreeVisible = true;
+    }
 });
- 
 
 const goback1DOM = document.querySelector('.go-back1');
 
