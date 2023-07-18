@@ -248,7 +248,7 @@ body {
     .main-2 .icons .yearly-free {
       position: absolute;
       display: none;
-      margin-top: 5px;
+      margin-top: 10px;
       margin-left: 20px;
       font-family: system-ui;
       color: rgba(1, 1, 88, 0.658); }
@@ -262,9 +262,10 @@ body {
       cursor: pointer;
       background: none; }
       .main-2 .icons .btn-icon1 img {
-        margin-left: -60px; }
+        margin-left: -60px;
+        margin-top: -10px; }
       .main-2 .icons .btn-icon1 h3 {
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: -30px;
         font-family: system-ui;
         font-size: 20px;
@@ -287,9 +288,10 @@ body {
       cursor: pointer;
       background: none; }
       .main-2 .icons .btn-icon2 img {
-        margin-left: -60px; }
+        margin-left: -60px;
+        margin-top: -10px; }
       .main-2 .icons .btn-icon2 h3 {
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: -10px;
         font-family: system-ui;
         font-size: 20px;
@@ -312,9 +314,10 @@ body {
       cursor: pointer;
       background: none; }
       .main-2 .icons .btn-icon3 img {
-        margin-left: -60px; }
+        margin-left: -60px;
+        margin-top: -10px; }
       .main-2 .icons .btn-icon3 h3 {
-        margin-top: 30px;
+        margin-top: 10px;
         margin-left: -70px;
         font-family: system-ui;
         font-size: 20px;
@@ -387,6 +390,140 @@ body {
     .main-2 .step2-buttons .next-btn1 {
       margin-top: 110px;
       margin-left: 280px;
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      background-color: #01015c;
+      color: white;
+      cursor: pointer;
+      font-family: system-ui;
+      font-size: 15px; }
+
+.main-3 {
+  display: none;
+  margin-left: 180px;
+  margin-top: 50px; }
+  .main-3 .header-3 h1 {
+    font-family: system-ui;
+    font-size: 30px;
+    color: rgba(1, 1, 88, 0.658); }
+  .main-3 .header-3 p {
+    margin-top: 10px;
+    color: rgba(101, 105, 105, 0.842);
+    font-family: system-ui; }
+  .main-3 .checkboxs {
+    margin-top: 40px; }
+    .main-3 .checkboxs .checkbox-1 {
+      display: flex;
+      width: 450px;
+      height: 75px;
+      border: 1px solid rgba(122, 120, 120, 0.267);
+      border-radius: 5px;
+      cursor: pointer; }
+      .main-3 .checkboxs .checkbox-1 input[type="checkbox"] {
+        width: 18px;
+        color: white;
+        border: none;
+        background-color: blue;
+        margin-left: 20px; }
+        .main-3 .checkboxs .checkbox-1 input[type="checkbox"]:hover {
+          background-color: #e9f7fc;
+          border: 2px solid plum; }
+      .main-3 .checkboxs .checkbox-1 h3 {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 15px;
+        color: rgba(1, 1, 88, 0.658); }
+      .main-3 .checkboxs .checkbox-1 h4 {
+        margin-left: -112px;
+        margin-top: 40px;
+        color: rgba(101, 105, 105, 0.842); }
+      .main-3 .checkboxs .checkbox-1 p {
+        float: right;
+        margin-right: -150px;
+        margin-top: -15px;
+        color: plum; }
+    .main-3 .checkboxs .checkbox-2 {
+      display: flex;
+      width: 450px;
+      height: 75px;
+      border: 1px solid rgba(122, 120, 120, 0.267);
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px; }
+      .main-3 .checkboxs .checkbox-2 input[type="checkbox"] {
+        width: 18px;
+        color: white;
+        border: none;
+        background-color: blue;
+        margin-left: 20px; }
+        .main-3 .checkboxs .checkbox-2 input[type="checkbox"]:hover {
+          background-color: #e9f7fc;
+          border: 2px solid plum; }
+      .main-3 .checkboxs .checkbox-2 h3 {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 15px;
+        color: rgba(1, 1, 88, 0.658); }
+      .main-3 .checkboxs .checkbox-2 h4 {
+        margin-left: -119px;
+        margin-top: 40px;
+        color: rgba(101, 105, 105, 0.842); }
+      .main-3 .checkboxs .checkbox-2 p {
+        float: right;
+        margin-right: -180px;
+        margin-top: -15px;
+        color: plum; }
+    .main-3 .checkboxs .checkbox-3 {
+      display: flex;
+      width: 450px;
+      height: 75px;
+      border: 1px solid rgba(122, 120, 120, 0.267);
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px; }
+      .main-3 .checkboxs .checkbox-3 input[type="checkbox"] {
+        width: 18px;
+        color: white;
+        border: none;
+        background-color: blue;
+        margin-left: 20px; }
+        .main-3 .checkboxs .checkbox-3 input[type="checkbox"]:hover {
+          background-color: #e9f7fc;
+          border: 2px solid plum; }
+      .main-3 .checkboxs .checkbox-3 h3 {
+        display: flex;
+        margin-left: 40px;
+        margin-top: 15px;
+        color: rgba(1, 1, 88, 0.658); }
+      .main-3 .checkboxs .checkbox-3 h4 {
+        margin-left: -166px;
+        margin-top: 40px;
+        color: rgba(101, 105, 105, 0.842); }
+      .main-3 .checkboxs .checkbox-3 p {
+        float: right;
+        margin-right: -140px;
+        margin-top: -15px;
+        color: plum; }
+  .main-3 .step3-buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center; }
+    .main-3 .step3-buttons .go-back2 {
+      width: 120px;
+      height: 40px;
+      margin-top: 90px;
+      margin-left: -30px;
+      background: none;
+      border: none;
+      color: #6c6d6d;
+      cursor: pointer;
+      font-family: system-ui;
+      font-size: 15px; }
+    .main-3 .step3-buttons .next-btn2 {
+      margin-top: 90px;
+      margin-left: 240px;
       width: 120px;
       height: 40px;
       border-radius: 5px;

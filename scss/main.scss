@@ -342,6 +342,8 @@ body {
 
 }
 
+// STEP-2 *******************************************
+
 .main-2 {
     display: none;
 
@@ -368,7 +370,7 @@ body {
         .yearly-free {
             position: absolute;
             display: none;
-            margin-top: 5px;
+            margin-top: 10px;
             margin-left: 20px;
             font-family: system-ui;
             color: rgba(1, 1, 88, 0.658);
@@ -386,10 +388,11 @@ body {
 
             img {
                 margin-left: -60px;
+                margin-top: -10px;
             }
 
             h3 {
-                margin-top: 30px;
+                margin-top: 10px;
                 margin-left: -30px;
                 font-family: system-ui;
                 font-size: 20px;
@@ -421,10 +424,11 @@ body {
 
             img {
                 margin-left: -60px;
+                margin-top: -10px;
             }
 
             h3 {
-                margin-top: 30px;
+                margin-top: 10px;
                 margin-left: -10px;
                 font-family: system-ui;
                 font-size: 20px;
@@ -456,10 +460,11 @@ body {
 
             img {
                 margin-left: -60px;
+                margin-top: -10px;
             }
 
             h3 {
-                margin-top: 30px;
+                margin-top: 10px;
                 margin-left: -70px;
                 font-family: system-ui;
                 font-size: 20px;
@@ -569,6 +574,196 @@ body {
     }
 }
 
+// STEP-3 *******************************************
+
+.main-3 {
+    display: none;
+    margin-left: 180px;
+    margin-top: 50px;
+
+    .header-3 {
+        h1 {
+            font-family: system-ui;
+            font-size: 30px;
+            color: rgba(1, 1, 88, 0.658);
+        }
+
+        p {
+            margin-top: 10px;
+            color: rgba(101, 105, 105, 0.842);
+            font-family: system-ui;
+        }
+    }
+
+    .checkboxs {
+        margin-top: 40px;
+
+        .checkbox-1 {
+            display: flex;
+            width: 450px;
+            height: 75px;
+            border: 1px solid rgba(122, 120, 120, 0.267);
+            border-radius: 5px;
+            cursor: pointer;
+
+            input[type="checkbox"] {
+                width: 18px;
+                color: white;
+                border: none;
+                background-color: blue;
+                margin-left: 20px;
+
+                &:hover {
+                    background-color: rgb(233, 247, 252);
+                    border: 2px solid plum;
+                }
+            }
+
+            h3 {
+                display: flex;
+                margin-left: 40px;
+                margin-top: 15px;
+                color: rgba(1, 1, 88, 0.658);
+            }
+
+            h4 {
+                margin-left: -112px;
+                margin-top: 40px;
+                color: rgba(101, 105, 105, 0.842);
+            }
+
+            p {
+                float: right;
+                margin-right: -150px;
+                margin-top: -15px;
+                color: plum;
+            }
+        }
+
+        .checkbox-2 {
+            display: flex;
+            width: 450px;
+            height: 75px;
+            border: 1px solid rgba(122, 120, 120, 0.267);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+
+            input[type="checkbox"] {
+                width: 18px;
+                color: white;
+                border: none;
+                background-color: blue;
+                margin-left: 20px;
+
+                &:hover {
+                    background-color: rgb(233, 247, 252);
+                    border: 2px solid plum;
+                }
+            }
+
+            h3 {
+                display: flex;
+                margin-left: 40px;
+                margin-top: 15px;
+                color: rgba(1, 1, 88, 0.658);
+            }
+
+            h4 {
+                margin-left: -119px;
+                margin-top: 40px;
+                color: rgba(101, 105, 105, 0.842);
+            }
+
+            p {
+                float: right;
+                margin-right: -180px;
+                margin-top: -15px;
+                color: plum;
+            }
+        }
+
+        .checkbox-3 {
+            display: flex;
+            width: 450px;
+            height: 75px;
+            border: 1px solid rgba(122, 120, 120, 0.267);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+
+            input[type="checkbox"] {
+                width: 18px;
+                color: white;
+                border: none;
+                background-color: blue;
+                margin-left: 20px;
+
+                &:hover {
+                    background-color: rgb(233, 247, 252);
+                    border: 2px solid plum;
+                }
+            }
+
+            h3 {
+                display: flex;
+                margin-left: 40px;
+                margin-top: 15px;
+                color: rgba(1, 1, 88, 0.658);
+            }
+
+            h4 {
+                margin-left: -166px;
+                margin-top: 40px;
+                color: rgba(101, 105, 105, 0.842);
+            }
+
+            p {
+                float: right;
+                margin-right: -140px;
+                margin-top: -15px;
+                color: plum;
+            }
+        }
+    }
+
+    .step3-buttons {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        .go-back2 {
+            width: 120px;
+            height: 40px;
+            margin-top: 90px;
+            margin-left: -30px;
+            background: none;
+            border: none;
+            color: rgb(108, 109, 109);
+            cursor: pointer;
+            font-family: system-ui;
+            font-size: 15px;
+        }
+
+        .next-btn2 {
+            margin-top: 90px;
+            margin-left: 240px;
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(1, 1, 92);
+            color: white;
+            cursor: pointer;
+            font-family: system-ui;
+            font-size: 15px;
+        }
+    }
+
+}
+
+
+
 .circle1.active {
     color: #fff;
     border: 1px solid #fff;
@@ -592,7 +787,6 @@ body {
     color: black;
     border: none;
 }
-
 
 .modebtn .monthly.active-monthly {
     color: rgba(78, 83, 83, 0.575);

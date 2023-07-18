@@ -18,20 +18,20 @@ const btnicon1DOM = document.querySelector('.btn-icon1');
 const btnicon2DOM = document.querySelector('.btn-icon2');
 const btnicon3DOM = document.querySelector('.btn-icon3');
 
-iconsBtnDOM.addEventListener('click',(e)=>{
-const clickedButton = e.target.closest('button')
+iconsBtnDOM.addEventListener('click', (e) => {
+    const clickedButton = e.target.closest('button')
 
-      btnicon1DOM.style.backgroundColor = ''
-      btnicon2DOM.style.backgroundColor = ''
-      btnicon3DOM.style.backgroundColor = ''; 
+    btnicon1DOM.style.backgroundColor = ''
+    btnicon2DOM.style.backgroundColor = ''
+    btnicon3DOM.style.backgroundColor = '';
 
-      if(clickedButton === btnicon1DOM){
+    if (clickedButton === btnicon1DOM) {
         btnicon1DOM.style.backgroundColor = 'rgba(233, 247, 252)';
-      } else if(clickedButton === btnicon2DOM){
+    } else if (clickedButton === btnicon2DOM) {
         btnicon2DOM.style.backgroundColor = 'rgba(233, 247, 252)';
-      }else if(clickedButton ===btnicon3DOM){
+    } else if (clickedButton === btnicon3DOM) {
         btnicon3DOM.style.backgroundColor = 'rgba(233, 247, 252)';
-      }
+    }
 });
 
 
@@ -72,8 +72,25 @@ goback1DOM.addEventListener('click', () => {
 
 
 
-// const nextbtn1DOM = document.querySelector('.next-btn1');
+const nextbtn1DOM = document.querySelector('.next-btn1');
+const main3DOM = document.querySelector('.main-3')
+const circle3DOM = document.querySelector('.circle3');
 
-// nextbtn1DOM.addEventListener('click', () => {
-    
-// })
+nextbtn1DOM.addEventListener('click', () => {
+
+    main3DOM.style.display = 'block';
+    main2DOM.style.display = 'none';
+
+    circle2DOM.classList.remove('active')
+    circle3DOM.classList.toggle('active')
+});
+
+const goback2DOM = document.querySelector('.go-back2');
+
+goback2DOM.addEventListener('click', () => {
+    main2DOM.style.display = 'block';
+    main3DOM.style.display = 'none';
+
+    circle2DOM.classList.toggle('active');
+    circle3DOM.classList.remove('active');
+});
