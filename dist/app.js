@@ -149,6 +149,7 @@ const changeLinkDOM = document.getElementById('changeLink');
 changeLinkDOM.addEventListener('click', (e) => {
     e.preventDefault();
     main2DOM.style.display = 'block'
+    main4DOM.style.display = 'none'
 
     circle2DOM.classList.toggle('active');
     circle4DOM.classList.remove('active');
