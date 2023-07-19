@@ -40,6 +40,10 @@ const planCircleDOM = document.querySelector('.planCircle');
 const monthlyDOM = document.querySelector('.monthly');
 const yearlyDOM = document.querySelector('.yearly');
 const yearlyfreeDOM = document.querySelectorAll('.yearly-free');
+
+const yearlyfeeDOM = document.querySelector('.yearly-fee');
+const monthlyfeeDOM = document.querySelector('.monthly-fee');
+
 let yearlyFreeVisible = false;
 
 planCircleDOM.addEventListener('click', () => {
@@ -47,14 +51,19 @@ planCircleDOM.addEventListener('click', () => {
     monthlyDOM.classList.toggle('active-monthly');
     yearlyDOM.classList.toggle('active-yearly');
 
+
     if (yearlyFreeVisible) {
         yearlyfreeDOM.forEach(element => {
             element.style.display = 'none';
+            yearlyfeeDOM.style.display = 'none';
+            monthlyfeeDOM.style.display = 'block';
         });
         yearlyFreeVisible = false;
     } else {
         yearlyfreeDOM.forEach(element => {
             element.style.display = 'block';
+            yearlyfeeDOM.style.display = 'block';
+            monthlyfeeDOM.style.display = 'none';
         });
         yearlyFreeVisible = true;
     }

@@ -605,6 +605,7 @@ body {
             border: 1px solid rgba(122, 120, 120, 0.267);
             border-radius: 5px;
             cursor: pointer;
+            font-family: system-ui;
 
             &:hover {
                 background-color: rgb(233, 247, 252);
@@ -628,16 +629,28 @@ body {
             }
 
             h4 {
-                margin-left: -112px;
+                margin-left: -122px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
                 margin-right: 88px;
+                font-size: 15px;
             }
 
-            p {
-                margin-right: -30px;
+            .monthly-fee {
+                float: right;
+                margin-right: -300px;
                 margin-top: 30px;
                 color: plum;
+                font-family: system-ui;
+            }
+
+            .yearly-fee {
+                display: none;
+                margin-left: 0px;
+                margin-top: 30px;
+                color: plum;
+                margin-right: -100px;
+                font-family: system-ui;
             }
         }
 
@@ -649,6 +662,7 @@ body {
             border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
+            font-family: system-ui;
 
             &:hover {
                 background-color: rgb(233, 247, 252);
@@ -672,17 +686,26 @@ body {
             }
 
             h4 {
-                margin-left: -119px;
+                margin-left: -127px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
                 margin-right: 120px;
+                font-size: 15px;
             }
 
-            p {
+            .monthly-fee {
                 float: right;
                 margin-right: -300px;
                 margin-top: 30px;
                 color: plum;
+            }
+
+            .yearly-fee {
+                display: none;
+                margin-left: 0px;
+                margin-top: 30px;
+                color: plum;
+                margin-right: -100px;
             }
         }
 
@@ -694,6 +717,7 @@ body {
             border-radius: 5px;
             cursor: pointer;
             margin-top: 20px;
+            font-family: system-ui;
 
             &:hover {
                 background-color: rgb(233, 247, 252);
@@ -716,16 +740,26 @@ body {
             }
 
             h4 {
-                margin-left: -166px;
+                margin-left: -181px;
                 margin-right: 80px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
+                font-size: 15px;
             }
 
-            p {
-                margin-right: -140px;
+            .monthly-fee {
+                float: right;
+                margin-right: -50px;
                 margin-top: 30px;
                 color: plum;
+            }
+
+            .yearly-fee {
+                display: none;
+                margin-left: 0px;
+                margin-top: 30px;
+                color: plum;
+                margin-right: -100px;
             }
         }
     }

@@ -420,7 +420,8 @@ body {
       height: 75px;
       border: 1px solid rgba(122, 120, 120, 0.267);
       border-radius: 5px;
-      cursor: pointer; }
+      cursor: pointer;
+      font-family: system-ui; }
       .main-3 .checkboxs .checkbox-1:hover {
         background-color: #e9f7fc;
         border: 1px solid plum; }
@@ -436,14 +437,24 @@ body {
         margin-top: 15px;
         color: rgba(1, 1, 88, 0.658); }
       .main-3 .checkboxs .checkbox-1 h4 {
-        margin-left: -112px;
+        margin-left: -122px;
         margin-top: 40px;
         color: rgba(101, 105, 105, 0.842);
-        margin-right: 88px; }
-      .main-3 .checkboxs .checkbox-1 p {
-        margin-right: -30px;
+        margin-right: 88px;
+        font-size: 15px; }
+      .main-3 .checkboxs .checkbox-1 .monthly-fee {
+        float: right;
+        margin-right: -300px;
         margin-top: 30px;
-        color: plum; }
+        color: plum;
+        font-family: system-ui; }
+      .main-3 .checkboxs .checkbox-1 .yearly-fee {
+        display: none;
+        margin-left: 0px;
+        margin-top: 30px;
+        color: plum;
+        margin-right: -100px;
+        font-family: system-ui; }
     .main-3 .checkboxs .checkbox-2 {
       display: flex;
       width: 450px;
@@ -451,7 +462,8 @@ body {
       border: 1px solid rgba(122, 120, 120, 0.267);
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-family: system-ui; }
       .main-3 .checkboxs .checkbox-2:hover {
         background-color: #e9f7fc;
         border: 1px solid plum; }
@@ -467,15 +479,22 @@ body {
         margin-top: 15px;
         color: rgba(1, 1, 88, 0.658); }
       .main-3 .checkboxs .checkbox-2 h4 {
-        margin-left: -119px;
+        margin-left: -127px;
         margin-top: 40px;
         color: rgba(101, 105, 105, 0.842);
-        margin-right: 120px; }
-      .main-3 .checkboxs .checkbox-2 p {
+        margin-right: 120px;
+        font-size: 15px; }
+      .main-3 .checkboxs .checkbox-2 .monthly-fee {
         float: right;
         margin-right: -300px;
         margin-top: 30px;
         color: plum; }
+      .main-3 .checkboxs .checkbox-2 .yearly-fee {
+        display: none;
+        margin-left: 0px;
+        margin-top: 30px;
+        color: plum;
+        margin-right: -100px; }
     .main-3 .checkboxs .checkbox-3 {
       display: flex;
       width: 450px;
@@ -483,7 +502,8 @@ body {
       border: 1px solid rgba(122, 120, 120, 0.267);
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-family: system-ui; }
       .main-3 .checkboxs .checkbox-3:hover {
         background-color: #e9f7fc;
         border: 1px solid plum; }
@@ -499,14 +519,22 @@ body {
         margin-top: 15px;
         color: rgba(1, 1, 88, 0.658); }
       .main-3 .checkboxs .checkbox-3 h4 {
-        margin-left: -166px;
+        margin-left: -181px;
         margin-right: 80px;
         margin-top: 40px;
-        color: rgba(101, 105, 105, 0.842); }
-      .main-3 .checkboxs .checkbox-3 p {
-        margin-right: -140px;
+        color: rgba(101, 105, 105, 0.842);
+        font-size: 15px; }
+      .main-3 .checkboxs .checkbox-3 .monthly-fee {
+        float: right;
+        margin-right: -50px;
         margin-top: 30px;
         color: plum; }
+      .main-3 .checkboxs .checkbox-3 .yearly-fee {
+        display: none;
+        margin-left: 0px;
+        margin-top: 30px;
+        color: plum;
+        margin-right: -100px; }
   .main-3 .step3-buttons {
     display: flex;
     text-align: center;
