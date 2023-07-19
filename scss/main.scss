@@ -606,17 +606,18 @@ body {
             border-radius: 5px;
             cursor: pointer;
 
-            input[type="checkbox"] {
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 1px solid plum;
+            }
+
+            input {
                 width: 18px;
                 color: white;
                 border: none;
                 background-color: blue;
                 margin-left: 20px;
 
-                &:hover {
-                    background-color: rgb(233, 247, 252);
-                    border: 2px solid plum;
-                }
             }
 
             h3 {
@@ -630,12 +631,12 @@ body {
                 margin-left: -112px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
+                margin-right: 88px;
             }
 
             p {
-                float: right;
-                margin-right: -150px;
-                margin-top: -15px;
+                margin-right: -30px;
+                margin-top: 30px;
                 color: plum;
             }
         }
@@ -649,17 +650,18 @@ body {
             cursor: pointer;
             margin-top: 20px;
 
-            input[type="checkbox"] {
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 1px solid plum;
+            }
+
+            input {
                 width: 18px;
                 color: white;
                 border: none;
                 background-color: blue;
                 margin-left: 20px;
 
-                &:hover {
-                    background-color: rgb(233, 247, 252);
-                    border: 2px solid plum;
-                }
             }
 
             h3 {
@@ -673,12 +675,13 @@ body {
                 margin-left: -119px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
+                margin-right: 120px;
             }
 
             p {
                 float: right;
-                margin-right: -180px;
-                margin-top: -15px;
+                margin-right: -300px;
+                margin-top: 30px;
                 color: plum;
             }
         }
@@ -692,17 +695,17 @@ body {
             cursor: pointer;
             margin-top: 20px;
 
-            input[type="checkbox"] {
+            &:hover {
+                background-color: rgb(233, 247, 252);
+                border: 1px solid plum;
+            }
+
+            input {
                 width: 18px;
                 color: white;
                 border: none;
                 background-color: blue;
                 margin-left: 20px;
-
-                &:hover {
-                    background-color: rgb(233, 247, 252);
-                    border: 2px solid plum;
-                }
             }
 
             h3 {
@@ -714,14 +717,14 @@ body {
 
             h4 {
                 margin-left: -166px;
+                margin-right: 80px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
             }
 
             p {
-                float: right;
                 margin-right: -140px;
-                margin-top: -15px;
+                margin-top: 30px;
                 color: plum;
             }
         }
@@ -794,4 +797,11 @@ body {
 
 .modebtn .yearly.active-yearly {
     color: rgb(4, 4, 109);
+}
+
+.checkbox-1.selected,
+.checkbox-2.selected,
+.checkbox-3.selected {
+    background-color: rgb(233, 247, 252);
+    border: 2px solid plum;
 }

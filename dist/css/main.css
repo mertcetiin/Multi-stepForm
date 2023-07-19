@@ -421,15 +421,15 @@ body {
       border: 1px solid rgba(122, 120, 120, 0.267);
       border-radius: 5px;
       cursor: pointer; }
-      .main-3 .checkboxs .checkbox-1 input[type="checkbox"] {
+      .main-3 .checkboxs .checkbox-1:hover {
+        background-color: #e9f7fc;
+        border: 1px solid plum; }
+      .main-3 .checkboxs .checkbox-1 input {
         width: 18px;
         color: white;
         border: none;
         background-color: blue;
         margin-left: 20px; }
-        .main-3 .checkboxs .checkbox-1 input[type="checkbox"]:hover {
-          background-color: #e9f7fc;
-          border: 2px solid plum; }
       .main-3 .checkboxs .checkbox-1 h3 {
         display: flex;
         margin-left: 40px;
@@ -438,11 +438,11 @@ body {
       .main-3 .checkboxs .checkbox-1 h4 {
         margin-left: -112px;
         margin-top: 40px;
-        color: rgba(101, 105, 105, 0.842); }
+        color: rgba(101, 105, 105, 0.842);
+        margin-right: 88px; }
       .main-3 .checkboxs .checkbox-1 p {
-        float: right;
-        margin-right: -150px;
-        margin-top: -15px;
+        margin-right: -30px;
+        margin-top: 30px;
         color: plum; }
     .main-3 .checkboxs .checkbox-2 {
       display: flex;
@@ -452,15 +452,15 @@ body {
       border-radius: 5px;
       cursor: pointer;
       margin-top: 20px; }
-      .main-3 .checkboxs .checkbox-2 input[type="checkbox"] {
+      .main-3 .checkboxs .checkbox-2:hover {
+        background-color: #e9f7fc;
+        border: 1px solid plum; }
+      .main-3 .checkboxs .checkbox-2 input {
         width: 18px;
         color: white;
         border: none;
         background-color: blue;
         margin-left: 20px; }
-        .main-3 .checkboxs .checkbox-2 input[type="checkbox"]:hover {
-          background-color: #e9f7fc;
-          border: 2px solid plum; }
       .main-3 .checkboxs .checkbox-2 h3 {
         display: flex;
         margin-left: 40px;
@@ -469,11 +469,12 @@ body {
       .main-3 .checkboxs .checkbox-2 h4 {
         margin-left: -119px;
         margin-top: 40px;
-        color: rgba(101, 105, 105, 0.842); }
+        color: rgba(101, 105, 105, 0.842);
+        margin-right: 120px; }
       .main-3 .checkboxs .checkbox-2 p {
         float: right;
-        margin-right: -180px;
-        margin-top: -15px;
+        margin-right: -300px;
+        margin-top: 30px;
         color: plum; }
     .main-3 .checkboxs .checkbox-3 {
       display: flex;
@@ -483,15 +484,15 @@ body {
       border-radius: 5px;
       cursor: pointer;
       margin-top: 20px; }
-      .main-3 .checkboxs .checkbox-3 input[type="checkbox"] {
+      .main-3 .checkboxs .checkbox-3:hover {
+        background-color: #e9f7fc;
+        border: 1px solid plum; }
+      .main-3 .checkboxs .checkbox-3 input {
         width: 18px;
         color: white;
         border: none;
         background-color: blue;
         margin-left: 20px; }
-        .main-3 .checkboxs .checkbox-3 input[type="checkbox"]:hover {
-          background-color: #e9f7fc;
-          border: 2px solid plum; }
       .main-3 .checkboxs .checkbox-3 h3 {
         display: flex;
         margin-left: 40px;
@@ -499,12 +500,12 @@ body {
         color: rgba(1, 1, 88, 0.658); }
       .main-3 .checkboxs .checkbox-3 h4 {
         margin-left: -166px;
+        margin-right: 80px;
         margin-top: 40px;
         color: rgba(101, 105, 105, 0.842); }
       .main-3 .checkboxs .checkbox-3 p {
-        float: right;
         margin-right: -140px;
-        margin-top: -15px;
+        margin-top: 30px;
         color: plum; }
   .main-3 .step3-buttons {
     display: flex;
@@ -559,3 +560,9 @@ body {
 
 .modebtn .yearly.active-yearly {
   color: #04046d; }
+
+.checkbox-1.selected,
+.checkbox-2.selected,
+.checkbox-3.selected {
+  background-color: #e9f7fc;
+  border: 2px solid plum; }

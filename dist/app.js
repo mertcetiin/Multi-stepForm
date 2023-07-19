@@ -94,3 +94,18 @@ goback2DOM.addEventListener('click', () => {
     circle2DOM.classList.toggle('active');
     circle3DOM.classList.remove('active');
 });
+
+const checkboxDivs = document.querySelectorAll('.checkbox-label');
+
+checkboxDivs.forEach((checkboxDiv) => {
+    checkboxDiv.addEventListener('click', () => {
+        const checkbox = checkboxDiv.querySelector('input[type="checkbox"]');
+        checkbox.checked = !checkbox.checked;
+
+        if (checkbox.checked) {
+            checkboxDiv.querySelector('div').classList.add('selected');
+        } else {
+            checkboxDiv.querySelector('div').classList.remove('selected');
+        }
+    });
+});
