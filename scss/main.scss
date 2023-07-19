@@ -626,6 +626,7 @@ body {
                 margin-left: 40px;
                 margin-top: 15px;
                 color: rgba(1, 1, 88, 0.658);
+
             }
 
             h4 {
@@ -633,7 +634,7 @@ body {
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
                 margin-right: 88px;
-                font-size: 15px;
+                font-size: 13px;
             }
 
             .monthly-fee {
@@ -646,8 +647,8 @@ body {
 
             .yearly-fee {
                 display: none;
-                margin-left: 0px;
-                margin-top: 30px;
+                margin-left: 20px;
+                margin-top: 25px;
                 color: plum;
                 margin-right: -100px;
                 font-family: system-ui;
@@ -690,12 +691,13 @@ body {
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
                 margin-right: 120px;
-                font-size: 15px;
+                font-size: 13px;
             }
 
             .monthly-fee {
                 float: right;
-                margin-right: -300px;
+                margin-left: 20px;
+                margin-right: -250px;
                 margin-top: 30px;
                 color: plum;
             }
@@ -744,12 +746,13 @@ body {
                 margin-right: 80px;
                 margin-top: 40px;
                 color: rgba(101, 105, 105, 0.842);
-                font-size: 15px;
+                font-size: 13px;
             }
 
             .monthly-fee {
                 float: right;
                 margin-right: -50px;
+                margin-left: 20px;
                 margin-top: 30px;
                 color: plum;
             }
