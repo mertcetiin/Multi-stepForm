@@ -118,3 +118,38 @@ checkboxDivs.forEach((checkboxDiv) => {
         }
     });
 });
+
+
+
+const nextbtn2DOM = document.querySelector('.next-btn2');
+const main4DOM = document.querySelector('.main-4');
+const circle4DOM = document.querySelector('.circle4');
+
+nextbtn2DOM.addEventListener('click', () => {
+    main4DOM.style.display = 'block';
+    main3DOM.style.display = 'none';
+
+    circle4DOM.classList.toggle('active')
+    circle3DOM.classList.remove('active')
+});
+
+
+const goback3DOM = document.querySelector('.go-back3');
+
+goback3DOM.addEventListener('click', () => {
+    main3DOM.style.display = 'block';
+    main4DOM.style.display = 'none';
+
+    circle3DOM.classList.toggle('active');
+    circle4DOM.classList.remove('active');
+});
+
+const changeLinkDOM = document.getElementById('changeLink');
+
+changeLinkDOM.addEventListener('click', (e) => {
+    e.preventDefault();
+    main2DOM.style.display = 'block'
+
+    circle2DOM.classList.toggle('active');
+    circle4DOM.classList.remove('active');
+});
