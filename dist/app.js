@@ -59,6 +59,8 @@ planCircleDOM.addEventListener('click', () => {
             monthlyfeeDOM.style.display = 'block';
         });
         yearlyFreeVisible = false;
+        const checked = false;
+        switchPrice(checked);
     } else {
         yearlyfreeDOM.forEach(element => {
             element.style.display = 'block';
@@ -67,6 +69,8 @@ planCircleDOM.addEventListener('click', () => {
         });
         yearlyFreeVisible = true;
     }
+    const checked = true;
+    switchPrice(checked);
 });
 
 const goback1DOM = document.querySelector('.go-back1');
@@ -154,3 +158,46 @@ changeLinkDOM.addEventListener('click', (e) => {
     circle2DOM.classList.toggle('active');
     circle4DOM.classList.remove('active');
 });
+
+
+function switchPrice(checked) {
+    const yearlyPrice = [90, 120, 150];
+    const monthlyPrice = [9, 12, 15];
+    const prices = document.querySelectorAll(".plan-priced");
+    if (checked) {
+        prices[0].innerHTML = `$${yearlyPrice[0]}/yr`;
+        prices[1].innerHTML = `$${yearlyPrice[1]}/yr`;
+        prices[2].innerHTML = `$${yearlyPrice[2]}/yr`;
+        setTime(true)
+    } else {
+        prices[0].innerHTML = `$${monthlyPrice[0]}/mo`;
+        prices[1].innerHTML = `$${monthlyPrice[1]}/mo`;
+        prices[2].innerHTML = `$${monthlyPrice[2]}/mo`;
+        setTime(false)
+    }
+}
+
+const checked = false;
+switchPrice(checked)
+
+
+
+
+
+const yourPlanYearly = [
+    {
+        id: 1,
+        name: 'Arcade',
+        price: 90,
+    },
+    {
+        id: 2,
+        name: 'Advanced',
+        price: 120,
+    },
+    {
+        id: 3,
+        name: 'Arcade',
+        price: 150,
+    },
+];

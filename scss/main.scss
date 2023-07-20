@@ -641,6 +641,7 @@ body {
                 float: right;
                 margin-right: -300px;
                 margin-top: 30px;
+                margin-left: 20px;
                 color: plum;
                 font-family: system-ui;
             }
@@ -822,7 +823,10 @@ body {
         display: flex;
         padding-top: 20px;
         padding-left: 20px;
-        border-bottom: 1px solid black;
+
+        h3 {
+            border-bottom: 1px solid black;
+        }
 
         a {
             display: block;
@@ -842,6 +846,7 @@ body {
         display: block;
         margin-top: 20px;
         padding-left: 20px;
+
 
         .ons-1 {
             margin-top: 30px;
