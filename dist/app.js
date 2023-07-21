@@ -154,6 +154,7 @@ changeLinkDOM.addEventListener('click', (e) => {
 
     circle2DOM.classList.toggle('active');
     circle4DOM.classList.remove('active');
+
 });
 
 const yearlyPrice = [90, 120, 150];
@@ -176,6 +177,7 @@ function switchPrice() {
     isyearlyPrice = !isyearlyPrice
 }
 
+
 const yearlyService = [10, 20, 20]
 const monthlyService = [1, 2, 2]
 let isService = true;
@@ -194,3 +196,23 @@ function switchService() {
     }
     isService = !isService
 }
+
+// const selectedPlanInfo = document.getElementById('selectedPlanInfo');
+
+// function updateSelectedPlanInfo() {
+//     const selectedOption = planSelectDOM.options[planSelectDOM.selectedIndex].value;
+
+//     if (selectedOption === 'arcade') {
+//         selectedPlanInfo.innerHTML = 'Arcade planı seçtiniz. Ücret: $9/mo. İlk 2 ay ücretsiz.';
+//     } else if (selectedOption === 'advanced') {
+//         selectedPlanInfo.innerHTML = 'Advanced planı seçtiniz. Ücret: $12/mo. İlk 2 ay ücretsiz.';
+//     } else if (selectedOption === 'pro') {
+//         selectedPlanInfo.innerHTML = 'Pro planı seçtiniz. Ücret: $15/mo. İlk 2 ay ücretsiz.';
+//     } else {
+//         selectedPlanInfo.innerHTML = 'Bilgiler alınamadı. Lütfen bir plan seçin.';
+//     }
+// }
+
+// planSelectDOM.addEventListener('change', () => {
+//     updateSelectedPlanInfo();
+// });
