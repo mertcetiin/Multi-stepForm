@@ -43,6 +43,8 @@ const yearlyfreeDOM = document.querySelectorAll('.yearly-free');
 
 const yearlyfeeDOM = document.querySelector('.yearly-fee');
 const monthlyfeeDOM = document.querySelector('.monthly-fee');
+const yearlyFree = document.querySelectorAll('.yearly-free');
+
 
 let yearlyFreeVisible = false;
 
@@ -51,28 +53,20 @@ planCircleDOM.addEventListener('click', () => {
     monthlyDOM.classList.toggle('active-monthly');
     yearlyDOM.classList.toggle('active-yearly');
 
+    const yearlyfreeDOM = document.querySelectorAll('.yearly-free');
 
     if (yearlyFreeVisible) {
         yearlyfreeDOM.forEach(element => {
             element.style.display = 'none';
-            yearlyfeeDOM.style.display = 'none';
-            monthlyfeeDOM.style.display = 'block';
         });
-        yearlyFreeVisible = false;
-        const checked = false;
-        switchPrice(checked);
     } else {
         yearlyfreeDOM.forEach(element => {
             element.style.display = 'block';
-            yearlyfeeDOM.style.display = 'block';
-            monthlyfeeDOM.style.display = 'none';
         });
-        yearlyFreeVisible = true;
     }
-    const checked = true;
-    switchPrice(checked);
+    yearlyFreeVisible = !yearlyFreeVisible;
 
-    selectPlanYearly()
+    switchPrice();
 });
 
 const goback1DOM = document.querySelector('.go-back1');
@@ -161,34 +155,22 @@ changeLinkDOM.addEventListener('click', (e) => {
     circle4DOM.classList.remove('active');
 });
 
-// selectPlanYearly()
+const yearlyPrice = [90, 120, 150];
+const monthlyPrice = [9, 12, 15];
+let isyearlyPrice = true
 
-function switchPrice(checked) {
-    const yearlyPrice = [90, 120, 150];
-    const monthlyPrice = [9, 12, 15];
+function switchPrice() {
     const prices = document.querySelectorAll(".plan-priced");
-    if (checked) {
+
+    if (isyearlyPrice) {
         prices[0].innerHTML = `$${yearlyPrice[0]}/yr`;
         prices[1].innerHTML = `$${yearlyPrice[1]}/yr`;
         prices[2].innerHTML = `$${yearlyPrice[2]}/yr`;
-        setTime(true)
+
     } else {
         prices[0].innerHTML = `$${monthlyPrice[0]}/mo`;
         prices[1].innerHTML = `$${monthlyPrice[1]}/mo`;
         prices[2].innerHTML = `$${monthlyPrice[2]}/mo`;
-        setTime(false)
     }
+    isyearlyPrice = !isyearlyPrice
 }
-
-const checked = false;
-switchPrice(checked)
-
-
-// function selectPlanYearly() {
-//     const planYearly = [10, 20, 20];
-//     const yearlyFeeElements = document.querySelectorAll('.yearly-fee');
-
-//     yearlyFeeElements.forEach((element, index) => {
-//         element[0].textContent = `+$${planYearly[index]}/yr`;
-//     });
-// }
