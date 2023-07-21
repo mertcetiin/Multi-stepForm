@@ -121,7 +121,6 @@ checkboxDivs.forEach((checkboxDiv) => {
 });
 
 
-
 const nextbtn2DOM = document.querySelector('.next-btn2');
 const main4DOM = document.querySelector('.main-4');
 const circle4DOM = document.querySelector('.circle4');
@@ -156,6 +155,17 @@ changeLinkDOM.addEventListener('click', (e) => {
     circle4DOM.classList.remove('active');
 
 });
+
+
+const confirmDOM = document.querySelector('.confirm');
+const main5DOM = document.querySelector('.main-5')
+
+confirmDOM.addEventListener('click', () => {
+    main4DOM.style.display = 'none'
+    main5DOM.style.display = 'block'
+})
+
+
 
 const yearlyPrice = [90, 120, 150];
 const monthlyPrice = [9, 12, 15];
