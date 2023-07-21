@@ -67,6 +67,7 @@ planCircleDOM.addEventListener('click', () => {
     yearlyFreeVisible = !yearlyFreeVisible;
 
     switchPrice();
+    switchService();
 });
 
 const goback1DOM = document.querySelector('.go-back1');
@@ -173,4 +174,23 @@ function switchPrice() {
         prices[2].innerHTML = `$${monthlyPrice[2]}/mo`;
     }
     isyearlyPrice = !isyearlyPrice
+}
+
+const yearlyService = [10, 20, 20]
+const monthlyService = [1, 2, 2]
+let isService = true;
+
+function switchService() {
+    const monthlyFee = document.querySelectorAll('.monthly-fee');
+
+    if (isService) {
+        monthlyFee[0].innerHTML = `+$${yearlyService[0]}/yr`;
+        monthlyFee[1].innerHTML = `+$${yearlyService[1]}/yr`;
+        monthlyFee[2].innerHTML = `+$${yearlyService[2]}/yr`;
+    } else {
+        monthlyFee[0].innerHTML = `+$${monthlyService[0]}/mo`;
+        monthlyFee[1].innerHTML = `+$${monthlyService[1]}/mo`;
+        monthlyFee[2].innerHTML = `+$${monthlyService[2]}/mo`;
+    }
+    isService = !isService
 }
