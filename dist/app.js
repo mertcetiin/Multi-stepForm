@@ -177,42 +177,6 @@ function switchPrice() {
     isyearlyPrice = !isyearlyPrice
 }
 
-
-const yearlyService = [10, 20, 20]
-const monthlyService = [1, 2, 2]
-let isService = true;
-
 function switchService() {
-    const monthlyFee = document.querySelectorAll('.monthly-fee');
 
-    if (isService) {
-        monthlyFee[0].innerHTML = `+$${yearlyService[0]}/yr`;
-        monthlyFee[1].innerHTML = `+$${yearlyService[1]}/yr`;
-        monthlyFee[2].innerHTML = `+$${yearlyService[2]}/yr`;
-    } else {
-        monthlyFee[0].innerHTML = `+$${monthlyService[0]}/mo`;
-        monthlyFee[1].innerHTML = `+$${monthlyService[1]}/mo`;
-        monthlyFee[2].innerHTML = `+$${monthlyService[2]}/mo`;
-    }
-    isService = !isService
 }
-
-// const selectedPlanInfo = document.getElementById('selectedPlanInfo');
-
-// function updateSelectedPlanInfo() {
-//     const selectedOption = planSelectDOM.options[planSelectDOM.selectedIndex].value;
-
-//     if (selectedOption === 'arcade') {
-//         selectedPlanInfo.innerHTML = 'Arcade planı seçtiniz. Ücret: $9/mo. İlk 2 ay ücretsiz.';
-//     } else if (selectedOption === 'advanced') {
-//         selectedPlanInfo.innerHTML = 'Advanced planı seçtiniz. Ücret: $12/mo. İlk 2 ay ücretsiz.';
-//     } else if (selectedOption === 'pro') {
-//         selectedPlanInfo.innerHTML = 'Pro planı seçtiniz. Ücret: $15/mo. İlk 2 ay ücretsiz.';
-//     } else {
-//         selectedPlanInfo.innerHTML = 'Bilgiler alınamadı. Lütfen bir plan seçin.';
-//     }
-// }
-
-// planSelectDOM.addEventListener('change', () => {
-//     updateSelectedPlanInfo();
-// });
