@@ -176,28 +176,3 @@ function switchPrice() {
     }
     isyearlyPrice = !isyearlyPrice
 }
-
-const checked = false;
-switchPrice(checked)
-
-
-
-
-
-const yourPlanYearly = [
-    {
-        id: 1,
-        name: 'Arcade',
-        price: 90,
-    },
-    {
-        id: 2,
-        name: 'Advanced',
-        price: 120,
-    },
-    {
-        id: 3,
-        name: 'Arcade',
-        price: 150,
-    },
-];
