@@ -18,6 +18,8 @@ const btnicon1DOM = document.querySelector('.btn-icon1');
 const btnicon2DOM = document.querySelector('.btn-icon2');
 const btnicon3DOM = document.querySelector('.btn-icon3');
 
+const selectedPlanInfo = document.getElementById('selectedPlanInfo');
+
 iconsBtnDOM.addEventListener('click', (e) => {
     const clickedButton = e.target.closest('button')
 
@@ -27,11 +29,17 @@ iconsBtnDOM.addEventListener('click', (e) => {
 
     if (clickedButton === btnicon1DOM) {
         btnicon1DOM.style.backgroundColor = 'rgba(233, 247, 252)';
+        selectedPlanInfo.textContent = `Arcade `;
     } else if (clickedButton === btnicon2DOM) {
         btnicon2DOM.style.backgroundColor = 'rgba(233, 247, 252)';
+        selectedPlanInfo.textContent = 'Advanced ';
     } else if (clickedButton === btnicon3DOM) {
         btnicon3DOM.style.backgroundColor = 'rgba(233, 247, 252)';
+        selectedPlanInfo.textContent = 'Pro ';
     }
+
+    // const planName = clickedButton.querySelector('h3').textContent;
+    // selectedPlanInfo.textContent = planName;
 });
 
 
@@ -66,8 +74,10 @@ planCircleDOM.addEventListener('click', () => {
     }
     yearlyFreeVisible = !yearlyFreeVisible;
 
+
     switchPrice();
     switchService();
+    planInfo();
 });
 
 const goback1DOM = document.querySelector('.go-back1');
@@ -118,6 +128,7 @@ checkboxDivs.forEach((checkboxDiv) => {
             checkboxDiv.querySelector('div').classList.remove('selected');
         }
     });
+
 });
 
 
@@ -174,10 +185,12 @@ let isyearlyPrice = true
 function switchPrice() {
     const prices = document.querySelectorAll(".plan-priced");
 
+
     if (isyearlyPrice) {
         prices[0].innerHTML = `$${yearlyPrice[0]}/yr`;
         prices[1].innerHTML = `$${yearlyPrice[1]}/yr`;
         prices[2].innerHTML = `$${yearlyPrice[2]}/yr`;
+
 
     } else {
         prices[0].innerHTML = `$${monthlyPrice[0]}/mo`;
@@ -207,22 +220,17 @@ function switchService() {
     isService = !isService
 }
 
-// const selectedPlanInfo = document.getElementById('selectedPlanInfo');
+let isPlan = true;
+function planInfo() {
+    const selectedPlanInfo = document.getElementById('selectedPlanInfo');
+    const planName = selectedPlanInfo.textContent.trim();
+    let planText = planName.replace(/\s*\(.*?\)\s*/g, '');
 
-// function updateSelectedPlanInfo() {
-//     const selectedOption = planSelectDOM.options[planSelectDOM.selectedIndex].value;
+    if (isPlan) {
+        selectedPlanInfo.innerHTML = `${planText} (Yearly)`;
+    } else {
+        selectedPlanInfo.innerHTML = `${planText} (Monthly)`;
+    }
+    isPlan = !isPlan;
+}
 
-//     if (selectedOption === 'arcade') {
-//         selectedPlanInfo.innerHTML = 'Arcade planı seçtiniz. Ücret: $9/mo. İlk 2 ay ücretsiz.';
-//     } else if (selectedOption === 'advanced') {
-//         selectedPlanInfo.innerHTML = 'Advanced planı seçtiniz. Ücret: $12/mo. İlk 2 ay ücretsiz.';
-//     } else if (selectedOption === 'pro') {
-//         selectedPlanInfo.innerHTML = 'Pro planı seçtiniz. Ücret: $15/mo. İlk 2 ay ücretsiz.';
-//     } else {
-//         selectedPlanInfo.innerHTML = 'Bilgiler alınamadı. Lütfen bir plan seçin.';
-//     }
-// }
-
-// planSelectDOM.addEventListener('change', () => {
-//     updateSelectedPlanInfo();
-// });
