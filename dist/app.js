@@ -161,7 +161,7 @@ changeLinkDOM.addEventListener('click', (e) => {
     circle4DOM.classList.remove('active');
 });
 
-selectPlanYearly()
+// selectPlanYearly()
 
 function switchPrice(checked) {
     const yearlyPrice = [90, 120, 150];
@@ -184,11 +184,11 @@ const checked = false;
 switchPrice(checked)
 
 
-function selectPlanYearly() {
-    const planYearly = [10, 20, 20];
-    const yearlyFeeElements = document.querySelectorAll('.yearly-fee');
+// function selectPlanYearly() {
+//     const planYearly = [10, 20, 20];
+//     const yearlyFeeElements = document.querySelectorAll('.yearly-fee');
 
-    yearlyFeeElements.forEach((element, index) => {
-        element[0].textContent = `+$${planYearly[index]}/yr`;
-    });
-}
+//     yearlyFeeElements.forEach((element, index) => {
+//         element[0].textContent = `+$${planYearly[index]}/yr`;
+//     });
+// }
