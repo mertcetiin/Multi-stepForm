@@ -10,6 +10,8 @@ nextbtnDOM.addEventListener('click', () => {
 
     circle2DOM.classList.toggle('active');
     circle1DOM.classList.add('active');
+
+    totalService();
 });
 
 
@@ -38,8 +40,12 @@ iconsBtnDOM.addEventListener('click', (e) => {
         selectedPlanInfo.textContent = 'Pro ';
     }
 
-    // const planName = clickedButton.querySelector('h3').textContent;
-    // selectedPlanInfo.textContent = planName;
+    isPlan = true;
+    planInfo();
+    // switchPrice();
+    // switchService();
+
+    totalService();
 });
 
 
@@ -77,7 +83,9 @@ planCircleDOM.addEventListener('click', () => {
 
     switchPrice();
     switchService();
+
     planInfo();
+    totalService();
 });
 
 const goback1DOM = document.querySelector('.go-back1');
@@ -91,7 +99,6 @@ goback1DOM.addEventListener('click', () => {
 });
 
 
-
 const nextbtn1DOM = document.querySelector('.next-btn1');
 const main3DOM = document.querySelector('.main-3')
 const circle3DOM = document.querySelector('.circle3');
@@ -103,6 +110,8 @@ nextbtn1DOM.addEventListener('click', () => {
 
     circle2DOM.classList.remove('active')
     circle3DOM.classList.toggle('active')
+
+    totalService();
 });
 
 const goback2DOM = document.querySelector('.go-back2');
@@ -127,8 +136,9 @@ checkboxDivs.forEach((checkboxDiv) => {
         } else {
             checkboxDiv.querySelector('div').classList.remove('selected');
         }
-    });
 
+        totalService();
+    });
 });
 
 
@@ -142,8 +152,9 @@ nextbtn2DOM.addEventListener('click', () => {
 
     circle4DOM.classList.toggle('active')
     circle3DOM.classList.remove('active')
-});
 
+    totalService();
+});
 
 const goback3DOM = document.querySelector('.go-back3');
 
@@ -165,6 +176,7 @@ changeLinkDOM.addEventListener('click', (e) => {
     circle2DOM.classList.toggle('active');
     circle4DOM.classList.remove('active');
 
+    totalService();
 });
 
 
@@ -174,8 +186,9 @@ const main5DOM = document.querySelector('.main-5')
 confirmDOM.addEventListener('click', () => {
     main4DOM.style.display = 'none'
     main5DOM.style.display = 'block'
-})
 
+    totalService();
+})
 
 
 const yearlyPrice = [90, 120, 150];
@@ -185,13 +198,10 @@ let isyearlyPrice = true
 function switchPrice() {
     const prices = document.querySelectorAll(".plan-priced");
 
-
     if (isyearlyPrice) {
         prices[0].innerHTML = `$${yearlyPrice[0]}/yr`;
         prices[1].innerHTML = `$${yearlyPrice[1]}/yr`;
         prices[2].innerHTML = `$${yearlyPrice[2]}/yr`;
-
-
     } else {
         prices[0].innerHTML = `$${monthlyPrice[0]}/mo`;
         prices[1].innerHTML = `$${monthlyPrice[1]}/mo`;
@@ -200,9 +210,8 @@ function switchPrice() {
     isyearlyPrice = !isyearlyPrice
 }
 
-
-const yearlyService = [10, 20, 20]
-const monthlyService = [1, 2, 2]
+const yearlyService = [10, 20, 20];
+const monthlyService = [1, 2, 2];
 let isService = true;
 
 function switchService() {
@@ -217,10 +226,11 @@ function switchService() {
         monthlyFee[1].innerHTML = `+$${monthlyService[1]}/mo`;
         monthlyFee[2].innerHTML = `+$${monthlyService[2]}/mo`;
     }
-    isService = !isService
+    isService = !isService;
 }
 
 let isPlan = true;
+
 function planInfo() {
     const selectedPlanInfo = document.getElementById('selectedPlanInfo');
     const planName = selectedPlanInfo.textContent.trim();
@@ -231,6 +241,27 @@ function planInfo() {
     } else {
         selectedPlanInfo.innerHTML = `${planText} (Monthly)`;
     }
-    isPlan = !isPlan;
+    switchPrice();
+    switchService();
 }
 
+let totalservicePlan = false;
+
+function totalService() {
+    const ons1DOM = document.querySelector('.ons-1');
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+
+    if (checkboxes.length > 0) {
+        let selectedServices = "";
+
+        checkboxes.forEach(checkbox => {
+            const serviceName = checkbox.parentNode.querySelector('.service').innerText;
+            selectedServices += `${serviceName} <br> <br>`;
+        });
+
+        selectedServices = selectedServices.slice(0, -2);
+        ons1DOM.innerHTML = `<h3> ${selectedServices}</h3>`;
+    } else {
+
+    }
+}
