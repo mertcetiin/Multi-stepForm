@@ -173,7 +173,9 @@ body {
   .container .steps h2 {
     display: none; }
   .container .main-1 .headerCon {
-    margin-left: 30px; } }
+    margin-left: 30px; }
+  .err {
+    border: 2px solid var(--Strawberry-red) !important; } }
 
 .main-1 {
   display: block; }
@@ -194,6 +196,11 @@ body {
       display: block;
       color: #01015c;
       font-family: system-ui; }
+    .main-1 .nameLabel .error {
+      display: none;
+      color: var(--Strawberry-red);
+      font-size: 0.9rem;
+      font-weight: 700; }
     .main-1 .nameLabel input {
       width: 400px;
       height: 40px;

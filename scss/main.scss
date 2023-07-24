@@ -215,6 +215,11 @@ body {
     .container .main-1 .headerCon {
         margin-left: 30px;
     }
+
+    .err {
+        border: 2px solid var(--Strawberry-red) !important;
+    }
+
 }
 
 .main-1 {
@@ -244,6 +249,13 @@ body {
             display: block;
             color: #01015c;
             font-family: system-ui;
+        }
+
+        .error {
+            display: none;
+            color: var(--Strawberry-red);
+            font-size: 0.9rem;
+            font-weight: 700;
         }
 
         input {
